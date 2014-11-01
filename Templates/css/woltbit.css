@@ -1,0 +1,109 @@
+@charset "utf-8";
+a:link, a:hover{
+	color:#95C8FD;
+	font-weight:bold;
+	text-decoration:none;
+}
+.nomb{
+	margin-bottom:0px !important;
+}
+.sitename, .adv-header{
+	height:150px;
+}
+
+.sitename{
+	background-color:green;
+}
+.adv-header{
+	background-color:purple;
+}
+
+.category{
+	float:left;
+	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+}
+.views{
+	float:right;
+}
+.views::after {
+    content:'';
+    display:block;
+    clear: both;
+}
+.main-content{
+	background-color:rgba(235,235,235,0.3);
+	padding:10px;
+}
+.main-post{
+	background-color:white;
+	width:100%;
+	padding:10px;
+	border:RGBA(100,100,100,0.1) solid 1px;
+	border-radius:7px;
+}
+
+.main-post-image{
+	margin:0px 10px;
+	overflow:hidden;
+	border-radius:5px;
+}
+.main-post-image img{
+	width:100%;
+}
+.main-post-title{
+	font-size:160%;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	font-weight:bold;
+}
+.main-post-title a{
+	Color:#497FFC;	
+	text-decoration:none;
+}
+.main-post-title a:hover{
+	Color:#497FFC;
+}
+
+.main-post-excerpt{
+	width:100%;
+	padding:10px;
+	background-color:#fff;
+}
+.main-post-content{
+	width:100%;
+}
+.main-post-content button{
+	border-radius:5px;
+	margin-top:10px;
+}
+.main-post-text{
+	width:100%;
+}
+.others-post{
+	margin:20px 0px;
+	padding:0px;
+}
+.other-inner-post{
+	margin:5px 0px;
+}
+.other-inner-post.odd{
+	padding-left:0px;
+}
+.other-inner-post.even{
+	padding-right:0px;
+}
+.pagination{
+	width:100%;
+}
+.btn-group{
+	width:50%;
+	margin-left:35%;
+}
+.sidebar{
+	background-color:rgba(235,235,235,0.3);
+}
+.mini-adv{
+	background-color:#000;
+	margin:4%;
+	height:130px;
+	padding:2px;
+}

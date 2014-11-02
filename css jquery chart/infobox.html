@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style>
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+@import url('http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:before, :after {
+  content: '';
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  padding: 50px 0;
+  font: 14px/1 'Open Sans', sans-serif;
+  color: #777;
+  background: #ddd;
+}
+
+p {
+  line-height: 1.8;
+}
+
+.wrapper {
+  width: 600px;
+  margin: 0 auto;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,.3);
+}
+
+.title {
+  height: 60px;
+  padding: 0 30px;
+  font-size: 18px;
+  line-height: 60px;
+}
+
+.chart {
+  height: 300px;
+  padding: 20px;
+  background: linear-gradient(to bottom, #345 0%, #234 100%);
+}
+
+.footer {
+  padding: 30px;
+}
+</style>
+<script>
+var c1 = document.getElementById("c1");
+var parent = document.getElementById("p1");
+c1.width = parent.offsetWidth - 40;
+c1.height = parent.offsetHeight - 40;
+
+var data1 = {
+  labels : ["M","T","W","T","F","S","S"],
+  datasets : [
+    {
+      fillColor : "rgba(255,255,255,.1)",
+      strokeColor : "rgba(255,255,255,1)",
+      pointColor : "#123",
+      pointStrokeColor : "rgba(255,255,255,1)",
+      data : [150,200,235,390,290,250,250]
+    }
+  ]
+}
+
+var options1 = {
+  scaleFontColor : "rgba(255,255,255,1)",
+  scaleLineColor : "rgba(255,255,255,1)",
+  scaleGridLineColor : "transparent",
+  bezierCurve : false,
+  scaleOverride : true,
+  scaleSteps : 5,
+  scaleStepWidth : 100,
+  scaleStartValue : 0
+}
+
+new Chart(c1.getContext("2d")).Line(data1,options1)
+</script>
+</head>
+
+<body>
+<div class='wrapper'>
+  <div class='title'>
+    Chart.js Infobox
+  </div>
+  <div class='chart' id='p1'>
+    <canvas id='c1'></canvas>
+  </div>
+  <div class='footer'>
+    <p>
+      Cupcake ipsum dolor sit amet tootsie roll chocolate bar sweet roll jelly-o. Fruitcake cupcake I love candy canes croissant donut. Powder tiramisu I love. Icing pie sugar plum marshmallow topping cupcake. Applicake I love ice cream. Pie tootsie roll gummi bears I love macaroon.
+    </p>
+  </div>
+</div>
+</body>
+</html>
